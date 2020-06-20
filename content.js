@@ -7,7 +7,7 @@ let filenames =  [
     "uni6.jpg"
 ]
 
-let imgs = document.getElementsByTagName('img');
+var imgs = document.getElementsByTagName('img');
 
 for(imgElt of imgs){
     let randomIndex = Math.floor(Math.random() * filenames.length);
