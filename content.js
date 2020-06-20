@@ -10,7 +10,7 @@ let filenames =  [
 var imgs = document.getElementsByTagName('img');
 
 for(imgElt of imgs){
-    let randomIndex = Math.floor(Math.random()* filenames.length);
+    let randomIndex = Math.floor(Math.random ()* filenames.length);
     let file=  'unicorns/' + filenames[randomIndex];
     let url =chrome.extension.getURL(file);
     imgElt.src = url;
